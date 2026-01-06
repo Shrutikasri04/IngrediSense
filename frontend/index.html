@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>IngrediSense AI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="adult-bg">
+
+    <div class="animated-bg">
+    <span></span><span></span><span></span>
+    <span></span><span></span><span></span>
+  </div>
+
+  <div class="app-container adult-theme" id="container">
+
+  <div class="app-container adult-theme" id="container">
+    <h1>IngrediSense 🧠</h1>
+    <p class="subtitle">AI-Native Ingredient Co-Pilot</p>
+
+    <label>Enter ingredients</label>
+    <textarea id="ingredients" placeholder="Example: Sugar, Sodium, Fiber"></textarea>
+
+    <label>Select age group</label>
+    <select id="ageGroup" onchange="updateTheme()">
+      <option value="child">Child</option>
+      <option value="adult" selected>Adult</option>
+      <option value="senior">Senior</option>
+    </select>
+
+<button onclick="analyze()">Analyze Ingredients</button>
+<button onclick="speak()">🔊 Listen to AI Explanation</button>
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
